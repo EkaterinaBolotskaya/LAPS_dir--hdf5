@@ -4,10 +4,10 @@
 ## Project Overview
 
 LAPS (funded by NSF Award# (FAIN): 1948453) project aims to facilitate the storage and exchange of laboratory data by providing a standardized format. 
-It utilizes a JSON file that contains information about the experiment, machine, the data obtained, etc. 
+We use a JSON file that contains information about the experiment, machine, the data obtained, etc. to organize and store experimental data.
 
-The functions in this repository are designed to manage and exchange laboratory data in a general format. 
-They facilitate the creation of an empty directory structure from a JSON schema, 
+The functions in this repository are designed to store and exchange laboratory data in a general format. 
+They include the creation of an empty directory structure from a JSON schema, 
 conversion of the populated directory to HDF5 format, and recreation of the original directory structure from the HDF5 file.
 
 !!! Before running anything:
@@ -55,7 +55,7 @@ The project consists of four main functions:
 
 - `Paterson_Carrara_Test_2/`: A folder containing example data files. You can use this folder to create the HDF5.
 
-- `Paterson5_CarraraTestRun_new2.json`: A sample JSON schema file that defines the directory structure for the example data. You can create yourown one [here](http://verve.mit.edu/laps/templates.html).
+- `Paterson5_CarraraTestRun_new2.json`: A sample JSON schema file that defines the directory structure for the example data. You can create your own JSON schema [here](http://verve.mit.edu/laps/templates.html).
 
 ## Usage Instructions
 
@@ -76,7 +76,7 @@ Follow the steps below to use the provided functions and manage your laboratory 
    Please see comments above on the difference between the two versions if rerunning the function.
 
 5. Populate the generated directory structure with your laboratory data. 
-   You can organize the data according to the subfields defined in the JSON schema.
+   You should organize the data according to the subfields defined in the JSON schema.
    If you want these scripts to be part of the HDF5, add them into the directory.
 
 7. Specify the path to the populated directory: popul_dir (if you populated the original directory, the path should be the same as empty_dir).
@@ -91,12 +91,12 @@ Follow the steps below to use the provided functions and manage your laboratory 
 10. To reproduce the original directory structure from the HDF5 file, specify the directory name: output_dir, 
    the file name for the recreated schema: recr_scdir, and the HDF5 file name: hdf5_file.
    Run the **LAPS_3_create_directory_from_HDF5** function. It will recreate the directory structure 
-   and populate it with the data stored in the HDF5 file. The original .json is recreated as well.
+   and populate it with the data stored in the HDF5 file. The original JSON schema is recreated as well.
 
 11. To interactively plot time series data from the recreated directory, 
     run the **LAPS_4_interactively_plot_timeseries** function. 
-    This function requires the recreated .json schema and the path to the time-series data (so modify the paths). 
-    It will print selected fields from the .json, get header arrays from there, and plot the time series data.
+    This function requires the recreated JSON schema and the path to the time-series data (so modify the paths). 
+    It will print selected fields from the JSON schema, get header arrays from there, and plot the time series data.
 
 ## Dependencies
 
