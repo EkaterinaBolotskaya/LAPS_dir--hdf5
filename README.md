@@ -79,22 +79,23 @@ Follow the steps below to use the provided functions and manage your laboratory 
 
 5. Populate the generated directory structure with your laboratory data. 
    You can organize the data according to the subfields defined in the JSON schema.
+   If you want these scripts to be part of the HDF5, add them into the directory.
 
-6. Specify the path to the populated directory: popul_dir (if you populated the original directory, the path should be the same as empty_dir).
+7. Specify the path to the populated directory: popul_dir (if you populated the original directory, the path should be the same as empty_dir).
    Specify the name for the HDF5 file to be created: hdf5_file.
 
-7. Run the **LAPS_2_HDF5_from_directory** function to convert the populated directory structure into an HDF5 file. 
+8. Run the **LAPS_2_HDF5_from_directory** function to convert the populated directory structure into an HDF5 file. 
    This function will read data from the populated directory, generate an HDF5 file that represents the same structure, and dump the data there as binary files.
 
-8. The HDF5 file can now be stored, exchanged, or used for further analysis. 
+9. The HDF5 file can now be stored, exchanged, or used for further analysis. 
    You may choose to move it to a different location or share it with others.
 
-9. To reproduce the original directory structure from the HDF5 file, specify the directory name: output_dir, 
+10. To reproduce the original directory structure from the HDF5 file, specify the directory name: output_dir, 
    the file name for the recreated schema: recr_scdir, and the HDF5 file name: hdf5_file.
    Run the **LAPS_3_create_directory_from_HDF5** function. It will recreate the directory structure 
    and populate it with the data stored in the HDF5 file. The original .json is recreated as well.
 
-10. To interactively plot time series data from the recreated directory, 
+11. To interactively plot time series data from the recreated directory, 
     run the **LAPS_4_interactively_plot_timeseries** function. 
     This function requires the recreated .json schema and the path to the time-series data (so modify the paths). 
     It will print selected fields from the .json, get header arrays from there, and plot the time series data.
