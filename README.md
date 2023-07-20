@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-The project aims to facilitate the storage and exchange of laboratory data by providing a standardized format. 
+LAPS (funded by NSF Award# (FAIN): 1948453) project aims to facilitate the storage and exchange of laboratory data by providing a standardized format. 
 It utilizes a JSON file that contains information about the experiment, machine, the data obtained, etc. 
 
 The functions in this repository are designed to manage and exchange laboratory data in a general format. 
