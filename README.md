@@ -1,6 +1,11 @@
 # LAPS_dir--hdf5
 # Data storage/exchange workflow for [LAPS project](http://verve.mit.edu/laps/)
 
+## Project Overview
+
+The project aims to facilitate the storage and exchange of laboratory data by providing a standardized format. 
+It utilizes a JSON file that contains information about the experiment, machine, the data obtained, etc. 
+
 The functions in this repository are designed to manage and exchange laboratory data in a general format. 
 They facilitate the creation of an empty directory structure from a JSON schema, 
 conversion of the populated directory to HDF5 format, and recreation of the original directory structure from the HDF5 file.
@@ -10,11 +15,6 @@ conversion of the populated directory to HDF5 format, and recreation of the orig
 Go to the [LAPS project website](http://verve.mit.edu/laps/templates.html) to create a JSON schema file. 
 You can either manually fill the form or use templates to generate the required .json file.
 Save the created .json schema file to a location on your computer.
-
-## Project Overview
-
-The project aims to facilitate the storage and exchange of laboratory data by providing a standardized format. 
-It utilizes a JSON file that contains information about the experiment, machine, the data obtained, etc. 
 
 ## Directory Contents
 The project consists of four main functions:
