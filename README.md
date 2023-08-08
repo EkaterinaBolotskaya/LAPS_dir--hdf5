@@ -21,6 +21,7 @@ The project consists of four main functions:
 
 ### 1.1 **LAPS_1_empty_dir_create_delete.py** 
 !!! This will DELETE your data
+
    This function creates an empty directory structure based on the provided JSON schema file. 
    The directory structure will be created in an empty folder. 
    If this folder already exists, it will be DELETED (including all the data in it) and recreated.
@@ -35,6 +36,7 @@ The project consists of four main functions:
    This function converts the populated directory structure into HDF5 format for storage or exchange. 
    It requires the JSON schema file and the path to the populated directory. 
    The function will generate an HDF5 file, containing the data from the directory structure.
+   
 !!! Do not save the HDF5 into the directory containing the data. This will lead to recursive reproduction of the HDF5 every time you run the function
 
 ### 3. **LAPS_3_create_directory_from_HDF5.py** 
