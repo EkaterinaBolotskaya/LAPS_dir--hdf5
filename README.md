@@ -35,6 +35,7 @@ The project consists of four main functions:
    This function converts the populated directory structure into HDF5 format for storage or exchange. 
    It requires the JSON schema file and the path to the populated directory. 
    The function will generate an HDF5 file, containing the data from the directory structure.
+!!! Do not save the HDF5 into the directory containing the data. This will lead to recursive reproduction of the HDF5 every time you run the function
 
 ### 3. **LAPS_3_create_directory_from_HDF5.py** 
    This function reproduces the original directory structure from the HDF5 file created in the previous step. 
