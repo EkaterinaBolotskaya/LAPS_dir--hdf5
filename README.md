@@ -58,7 +58,7 @@ The project consists of four main functions:
 
 - `Paterson_Carrara_Test_2/`: A folder containing example data files. You can use this folder to create the HDF5.
 
-- `Paterson5_CarraraTestRun_new2.json`: A sample JSON schema file that defines the directory structure for the example data. You can create your own JSON schema [here](http://verve.mit.edu/laps/templates.html).
+- `Paterson5_CarraraTest.json`: A sample JSON schema file that defines the directory structure for the example data. You can create your own JSON schema [here](http://verve.mit.edu/laps/templates.html).
 
 ## Usage Instructions
 
