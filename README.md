@@ -63,6 +63,8 @@ The project consists of four main functions:
 
 ## Usage Instructions
 
+![image](https://github.com/user-attachments/assets/da289927-c9a2-4e27-8c05-129ef481863e)
+
 Follow the steps below to use the provided functions and manage your laboratory data:
 
 1. Go to the [LAPS project website](http://verve.mit.edu/laps/templates.html) to create a JSON schema file. 
@@ -109,3 +111,19 @@ such as the `h5py`, `json`, `numpy`, `openpyxl`, and `pandas` libraries.
 You can install them using a package manager like `pip`.
 
 For any questions or issues, feel free to reach out. 
+
+## Screenshots
+
+- Folder structure to HDF5 file structure
+  
+![image](https://github.com/user-attachments/assets/94c171e6-c523-40aa-bfc2-6e3576287371)
+
+- Interactive time-series data plotting
+  
+![image](https://github.com/user-attachments/assets/2c737463-45eb-4155-ac25-68d269bd576d)
+
+
+
+
+
+
